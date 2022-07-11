@@ -20,15 +20,15 @@ class Palindromecheck:
                 filtered_data = filtered_data + i
         return filtered_data
 
-    def reverse_check(self,filtered_dat):
+    def reverse_check(self,value):
         i = 0
-        length = len(filtered_dat)
-        inpu = list(filtered_dat)
+        length = len(value)
+        inpu = list(value)
         output = []
         while length > 0 :
             i = i - 1
             length = length - 1
-            output.append(filtered_dat[i])
+            output.append(value[i])
         return output == inpu
 
     def get_result(self):
