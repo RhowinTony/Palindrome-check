@@ -1,0 +1,1 @@
+from .palindromechecker import Palindromecheck
