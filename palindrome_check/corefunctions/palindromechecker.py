@@ -8,9 +8,8 @@ class Palindromecheck:
     def __init__(self, inp_val:str) -> None:
         try:
             self.givenstring = inp_val.lower()
-            print(self.givenstring)
         except KeyboardInterrupt:
-            print("\n Program interptd by user")            
+            print("\n Program interruptd by user")            
 
   
     def str_filter(self):
@@ -19,7 +18,6 @@ class Palindromecheck:
         for i in self.givenstring:
             if i in str_filters:
                 filtered_data = filtered_data + i
-        print(filtered_data)
         return filtered_data
 
     def reverse_check(self,filtered_dat):
@@ -40,6 +38,8 @@ class Palindromecheck:
             print("The given string is a palindrome")
         else:
             print("The given string is not a palindrome")
+        print("_*___*_"*6)
+
 
 
 
