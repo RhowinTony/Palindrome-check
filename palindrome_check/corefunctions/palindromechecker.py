@@ -14,28 +14,28 @@ class Palindromecheck:
 
   
     def str_filter(self):
-        str_filterer = "abcdefghijklmnopqrstuvwxyz1234567890"
+        str_filters = "abcdefghijklmnopqrstuvwxyz1234567890"
         filtered_data = ""
         for i in self.givenstring:
-            if i in str_filterer:
+            if i in str_filters:
                 filtered_data = filtered_data + i
         print(filtered_data)
         return filtered_data
 
-    def palindrome(self):
+    def reverse_check(self,filtered_dat):
         i = 0
-        length = len(self)
-        inpu = list(self)
+        length = len(filtered_dat)
+        inpu = list(filtered_dat)
         output = []
         while length > 0 :
             i = i - 1
             length = length - 1
-            output.append(self[i])
+            output.append(filtered_dat[i])
         return output == inpu
 
     def get_result(self):
         filtered_dat = self.str_filter()
-        is_palindrome = self.palindrome()
+        is_palindrome = self.reverse_check(filtered_dat)
         if is_palindrome:
             print("The given string is a palindrome")
         else:
