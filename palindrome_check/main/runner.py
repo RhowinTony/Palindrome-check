@@ -4,7 +4,7 @@
 from palindrome_check.corefunctions import Palindromecheck
 
 def main() -> None:
-    input_val = input("Please enter the string to check palindrome condition")
+    input_val = input("Please enter the string to check palindrome condition ")
     palindromecheck = Palindromecheck(input_val)
     print(palindromecheck)
     palindromecheck.get_result()
