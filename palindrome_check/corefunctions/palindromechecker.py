@@ -1,8 +1,8 @@
-# """
-#     Value = input("Enter a string ").lower()
-#     filtered_data =filter(Value)
-#     is_palindrome = palindrome(filtered_data)
-# """
+"""
+    Value = input("Enter a string ").lower()
+    filtered_data =filter(Value)
+    is_palindrome = palindrome(filtered_data)
+"""
 
 class Palindromecheck:
     def __init__(self, inp_val:str) -> None:
